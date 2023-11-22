@@ -8,14 +8,15 @@ using System.Threading.Tasks;
 
 namespace RPG_Game
 {
+
     internal class Program
     {
+        
         static void Main(string[] args)
         {
             string path = @"Map.txt";
-            string input;
+            string input = File.ReadAllText(path);
             Console.WriteLine();
-            input = File.ReadAllText(path);
             Console.WriteLine(path);
         }
 
